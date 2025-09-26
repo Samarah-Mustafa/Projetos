@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Popular - Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Popular</h1>
+        <nav>
+            <button id="show-cadastro">Cadastre-se</button>
+            <button id="show-login">Login</button>
+            <button id="logout-btn" style="display: none;">Sair</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="auth-section" class="card">
+            <div id="cadastro-form" class="form-container">
+                <h2>Cadastre-se</h2>
+                <input type="text" id="cadastro-nome" placeholder="Nome Completo" required>
+                <input type="email" id="cadastro-email" placeholder="Email" required>
+                <input type="password" id="cadastro-senha" placeholder="Senha" required>
+                <button id="cadastrar-btn">Cadastrar</button>
+                <p>Já tem conta? <a href="#" id="link-to-login">Faça login</a></p>
+            </div>
+
+            <div id="login-form" class="form-container" style="display: none;">
+                <h2>Login</h2>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-senha" placeholder="Senha" required>
+                <button id="login-btn">Entrar</button>
+                <p>Não tem conta? <a href="#" id="link-to-cadastro">Cadastre-se</a></p>
+            </div>
+            <p id="auth-message" class="message"></p>
+        </section>
+
+        <section id="dashboard-section" style="display: none;">
+            <p>Bem-vindo(a), <span id="user-display-name"></span>!</p>
+
+            <div class="card">
+                <h2>Seus Agendamentos</h2>
+                <div id="paciente-agendamentos">
+                    <p>Você não possui agendamentos.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Agendar Nova Consulta</h2>
+                <div id="passo-1">
+                    <h3>1. Escolha a Especialidade:</h3>
+                    <div id="especialidades-list"></div>
+                    <p id="especialidade-message" class="message"></p>
+                </div>
+
+                <div id="passo-2" style="display: none;">
+                    <h3>2. Escolha o Médico:</h3>
+                    <div id="medicos-list"></div>
+                    <p id="medico-message" class="message"></p>
+                    <button id="back-to-especialidades">Voltar às Especialidades</button>
+                </div>
+
+                <div id="passo-3" style="display: none;">
+                    <h3>3. Escolha o Horário:</h3>
+                    <div id="horarios-list"></div>
+                    <p id="horario-message" class="message"></p>
+                    <button id="back-to-medicos">Voltar aos Médicos</button>
+                </div>
+            </div>
+            <p id="agendamento-message" class="message"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
