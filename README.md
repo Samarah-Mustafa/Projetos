@@ -2,9 +2,6 @@
 
 Este repositório reúne diversos projetos desenvolvidos com fins de estudo, experimentação e desenvolvimento pessoal/profissional. Cada pasta representa um projeto independente com seu próprio escopo, tecnologias e objetivos.
 
-projetos/
-├── Sistema de Agendamento de Consulta/
-│   └── README.md
 
 📌 Projetos incluídos
 - Sistema de Agendamento de Consulta – Sistema desenvolvido a partir de um estudo de caso, onde detectou se a necessidade de uma clínica popular em automatizar o processo de agendamento de consultas. Para solucionar esse problema, foi utilizada a linguagem de programação JavaScript, assim como HTML e CSS.
