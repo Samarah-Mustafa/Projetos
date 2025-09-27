@@ -7,6 +7,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+    background-image: url('imagens/clínica_wallpaper'); /* Exemplo: uma imagem de fundo para o desktop */
+    background-size: cover;
+    background-position: center;
+    overflow: auto; /* Permite scroll se o conteúdo for grande */
 }
 
 header {
@@ -21,12 +26,21 @@ header {
 header h1 {
     margin: 0;
 }
+logo-container {
+    display: flex;
+    align-items: center;
+}
 
+.clinic-logo {
+    height: 300px; /* Tamanho do logo */
+    margin-right: 10px;
+    vertical-align: middle;
+}
 nav button {
     background-color: #023e46;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     margin-left: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -38,14 +52,14 @@ nav button:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     max-width: 800px;
 }
 
 .card {
     background-color: #c3d1d3;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
